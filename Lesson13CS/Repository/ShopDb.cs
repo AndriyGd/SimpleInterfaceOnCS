@@ -24,21 +24,24 @@ namespace Lesson13CS.Repository
             {
                 Color = AppleColor.Green,
                 Kind = "Gold",
-                Price = 2.56
+                Price = 2.56,
+                Currency = Currency.UAH
             });
 
             Apples.Add(new Apple
             {
                 Color = AppleColor.Green,
                 Kind = "Gold",
-                Price = 3.90
+                Price = 3.90,
+                Currency = Currency.EUR
             });
 
             Apples.Add(new Apple
             {
                 Color = AppleColor.Yellow,
                 Kind = "Double Sun",
-                Price = 4.56
+                Price = 4.56,
+                Currency = Currency.UAH
             });
             #endregion
 
@@ -48,31 +51,36 @@ namespace Lesson13CS.Repository
             {
                 Color = AppleColor.Green,
                 Kind = "Gold",
-                Price = 5.56
+                Price = 5.56,
+                Currency = Currency.UAH
             });
             SoldApples.Add(new SoldApple
             {
                 Color = AppleColor.Red,
                 Kind = "Gold FD",
-                Price = 13.90
+                Price = 13.90,
+                Currency = Currency.EUR
             });
             SoldApples.Add(new SoldApple
             {
                 Color = AppleColor.Yellow,
                 Kind = "Double Sun",
-                Price = 45.56
+                Price = 45.56,
+                Currency = Currency.UAH
             });
             SoldApples.Add(new SoldApple
             {
                 Color = AppleColor.Yellow,
                 Kind = "Double Sun",
-                Price = 15.56
+                Price = 15.56,
+                Currency = Currency.USD
             });
             SoldApples.Add(new SoldApple
             {
                 Color = AppleColor.Red,
                 Kind = "Double Sun",
-                Price = 7.56
+                Price = 7.56,
+                Currency = Currency.UAH
             });
             #endregion
         }

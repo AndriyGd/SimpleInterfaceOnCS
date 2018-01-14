@@ -11,6 +11,7 @@ namespace Lesson13CS.Model
         private double _price;
         public string Kind { get; set; }
         public AppleColor Color { get; set; }
+        public Currency Currency { get; set; }
 
         public double Price
         {

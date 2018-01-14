@@ -14,7 +14,7 @@ namespace Lesson13CS
         static void Main(string[] args)
         {
             var repository = new DbRepository();
-
+            
             //var apples = repository.GetSoldApples();
             //var apples = repository.GetApples();
             var apples = repository.GetAllApplesBy();
@@ -23,15 +23,22 @@ namespace Lesson13CS
             ////editApple.Price = 10.45;
             ////PrintApple(editApple);
 
-            apples.ForEach(PrintApple);
-            repository.HistoryHelper.SaveHistory();
+            //apples.ForEach(PrintApple);
+            //repository.HistoryHelper.SaveHistory();
+
+            //var newPrice = CurrencyConverter.Convert(apple, apple, Currency.EUR);
+            //Console.WriteLine($"New price: {newPrice}");
+            var apple = apples[3];
+            PrintApple(apple);
+            CurrencyConverter.ConvertD(apple, apple, Currency.USD);
+            PrintApple(apple);
             Console.ReadKey();
         }
 
         private static void PrintApple(IApple apple)
         { 
             
-            Console.WriteLine($"Kind: {apple.Kind}\nColor: {apple.Color}\nPrice: {apple.Price:n}\n");
+            Console.WriteLine($"Kind: {apple.Kind}\nColor: {apple.Color}\nPrice: {apple.Price:n}\nCurrency: {apple.Currency}\n");
         }
     }
 }

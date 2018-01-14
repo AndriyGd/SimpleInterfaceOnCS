@@ -43,9 +43,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Model\Apple.cs" />
+    <Compile Include="Model\CurrencyConverter.cs" />
     <Compile Include="Model\HistoryHelper.cs" />
     <Compile Include="Model\IApple.cs" />
+    <Compile Include="Model\ICurrency.cs" />
     <Compile Include="Model\IHistory.cs" />
+    <Compile Include="Model\IPrice.cs" />
     <Compile Include="Model\SoldApple.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

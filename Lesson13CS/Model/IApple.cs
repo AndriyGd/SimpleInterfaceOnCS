@@ -13,10 +13,9 @@ namespace Lesson13CS.Model
         Yellow
     }
 
-    public interface IApple
+    public interface IApple: ICurrency, IPrice
     {
         string Kind { get; set; }
         AppleColor Color { get; set; }
-        double Price { get; set; }
     }
 }
